@@ -1,3 +1,9 @@
+/*
+ * Name: Riley Benson
+ * Course name: COMP-003B: ASP.NET Core
+ * Faculty name: Jonathan Cruz
+ * Purpose: To showcase my ability to build a structured and modular ASP.NET Core MVC web application.
+ */
 namespace COMP003B.Assignment2
 {
     public class Program
@@ -21,6 +27,10 @@ namespace COMP003B.Assignment2
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            app.UseWelcomePage("/welcome");
+
+            app.UseMiddleware<RequestTrackerMiddleware>();
 
             app.UseRouting();
 
