@@ -30,7 +30,7 @@ namespace COMP003B.Assignment2
 			app.UseMiddleware<COMP003B.Assignment2.Middleware.RequestTrackerMiddleware>();
 			app.UseWelcomePage("/welcome");
 
-            app.UseMiddleware<RequestTrackerMiddleware>();
+            app.UseMiddleware<COMP003B.Assignment2.Middleware.RequestTrackerMiddleware>();
 
             app.UseRouting();
 

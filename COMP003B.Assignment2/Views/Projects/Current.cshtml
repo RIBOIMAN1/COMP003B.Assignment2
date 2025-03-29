@@ -1,5 +1,8 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "About";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+<h2>@ViewData["Title"]</h2>
+<p>This page introduces me to the world of ASP.NET Core.</p>
+@await Html.PartialAsync("_Sidebar")
